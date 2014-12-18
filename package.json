@@ -1,0 +1,25 @@
+{
+  "name": "baqry",
+  "version": "0.0.0",
+  "description": "QR-code-backed multi-screen app network",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kr1sp1n/baqry.git"
+  },
+  "keywords": [
+    "QR"
+  ],
+  "author": "kr1sp1n",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kr1sp1n/baqry/issues"
+  },
+  "homepage": "https://github.com/kr1sp1n/baqry",
+  "dependencies": {
+    "express": "^4.10.6"
+  }
+}
