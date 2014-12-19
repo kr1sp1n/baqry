@@ -25,7 +25,8 @@
   "dependencies": {
     "express": "^4.10.6",
     "coffee-script": "^1.8.0",
-    "socket.io": "^1.2.1"
+    "socket.io": "^1.2.1",
+    "body-parser": "^1.10.0"
   },
   "engines": {
     "node": "0.10.x",
