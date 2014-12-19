@@ -1,10 +1,12 @@
 {
   "name": "baqry",
   "version": "0.0.0",
+  "private": true,
   "description": "QR-code-backed multi-screen app network",
   "main": "index.coffee",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "start": "node_modules/.bin/coffee index.coffee"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,8 @@
   },
   "homepage": "https://github.com/kr1sp1n/baqry",
   "dependencies": {
-    "express": "^4.10.6"
+    "express": "^4.10.6",
+    "coffee-script": "^1.8.0",
+    "socket.io": "^1.2.1"
   }
 }

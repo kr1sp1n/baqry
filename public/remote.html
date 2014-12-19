@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Remote</title>
+  </head>
+  <body>
+
+    <input id="m" autocomplete="off" /><button onclick="submit()">Send</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+
+      var socket = io();
+      var submit = function(){
+        var input = document.getElementById('m');
+        var msg = input.value;
+        socket.emit('chat message', msg);
+        input.value = '';
+      }
+
+    </script>
+  </body>
+</html>

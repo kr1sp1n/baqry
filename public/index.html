@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>baQRy</title>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <ul id="messages"></ul>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+
+      var socket = io();
+      var list = document.getElementById('messages');
+      socket.on('chat message', function(msg){
+        console.log('message: ' + msg);
+        var item = document.createElement("li");
+        item.innerHTML = msg;
+        list.appendChild(item);
+      });
+
+    </script>
+  </body>
+</html>
