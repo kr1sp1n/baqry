@@ -1,6 +1,7 @@
 express = require 'express'
 app = express()
 
+app.set 'port', (process.env.PORT || 3000)
 
 options = {}
 app.use express.static 'public', options
@@ -16,7 +17,7 @@ app.get '/', (req, res)->
 app.get '/remote', (req, res)->
   res.sendFile "#{__dirname}/public/remote.html"
 
-server = app.listen 3000, ->
+server = app.listen app.get('port'), ->
   host = server.address().address
   port = server.address().port
   io = require('socket.io')(server)
